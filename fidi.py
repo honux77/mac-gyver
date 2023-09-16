@@ -75,7 +75,7 @@ def imageResize(args):
         resize = True
     else:
         ratio = float(args['size'])
-
+    
     files = []
     if 'file' in args:
         files.append(args['file'])
@@ -85,7 +85,12 @@ def imageResize(args):
     
     for f in files:
         print(f)
-        ir.resizeImageKeepRatio(f, ratio)
+        if ratio:
+            ir.resizeImageKeepRatio(f, ratio)
+        if resize and not 'crop' in args:
+            ir.resizeImage(f, width, height)
+        else:
+            ir.cropImage(f, width, height, 'center' in args)
 
 # run exec command
 execProgram()

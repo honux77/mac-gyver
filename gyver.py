@@ -18,5 +18,15 @@ msgFrame.grid(row=0, column=1)
 buttonFrame.grid(row=0, column=2)
 
 
+## Left Frame
+label = tk.Label(leftFrame, text="파일 목록")
+label.grid(row=0, column=0)
+
+fileCombo = ttk.Combobox(leftFrame, width=50)
+fileCombo.grid(row=1, column=0, padx=10, pady=10)
+
+## 버튼들
+
+
 # main loop
 root.mainloop()

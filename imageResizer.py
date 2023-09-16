@@ -29,7 +29,7 @@ def resizeImageKeepRatio(file, ratio):
     
     img = Image.open(file)
     width, height = img.size
-    img = img.resize((int(width * ratio), int(height * ratio)), Image.BILINEAR)
+    img = img.resize((int(width * ratio), int(height * ratio)), Image.NEAREST)
     img.save(file)
 
 def cropImage(file, width, height, center=True):
