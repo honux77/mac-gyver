@@ -3,6 +3,7 @@ import json
 env = {}
 
 def readEnv():
+    global env
     # read env from env.json
     with open('env.json', 'r') as f:
         env = json.load(f)
