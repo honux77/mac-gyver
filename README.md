@@ -2,20 +2,19 @@
 
 이것저것 기능을 가지고 있는 개인용 유틸리티 저장소
 
-## main GUI
+## 파이썬 모듈
 
-python + tkinter 로 제작 예정
+- 주 용도는 API이므로 먼저 모듈로 제공해 줄 것
+
+## CLI 기반 개발
+
+- [Textual](https://textual.textualize.io/) 기반으로 UI 추가 예정
+- https://textual.textualize.io/tutorial/
+
 
 ## 콘솔 명령
 
-기능을 콘솔 명령으로 나누어서 터미널로도 사용 가능하게 만들 예정
-모듈로 분리하면 잘 되지 않을까 생각중
-
-기본 사용법
-
-```bash
-fjdi.exe [대상 폴더 또는 파일] --명령 인자 ...
-```
+- pyinstaller를 이용해서 각각을 exe 파일로 만들고 texual로 연동하면 좋을 것 같다.
 
 ### 이미지 확대 또는 축소
 
